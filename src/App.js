@@ -36,7 +36,7 @@ function App() {
       setListaTarefas([...listaTarefas, { dia: diaSelecionado, periodo: periodoSelecionado, atividade }]);
     }
 
-    setAtividade(''); // Limpar os campos após adicionar
+    setAtividade(''); // Limpar os campos após adicionarr
   };
 
   const removerAtividade = (dia, periodo) => {
