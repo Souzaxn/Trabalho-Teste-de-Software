@@ -1,13 +1,97 @@
 body {
+  position: relative;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  color: #ffffff;
+  background-color: #01002c;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.app-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("https://i.pinimg.com/originals/3f/5f/1d/3f5f1dbcc6cf70317a8b8cb013807137.jpg");
+  background-size: cover;
+  filter: blur(1px); 
+  z-index: -1;
+  border-radius: 20px;
+  
+}
+
+.app-container {
+  position: relative;
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 50%;
+  background-color: #ffffff; /* Fundo branco */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  
+}
+
+h1 {
+  color: #ffffff; /* Vermelho vibrante para o título principal */
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.input-container {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 2px solid #3a05b6; /* Bordas em vermelho */
+  border-radius: 5px;
+  background-color: #f4e6ff; /* Fundo suave em tom de vermelho claro */
+}
+
+h2 {
+  color: #ffffff; /* Laranja vibrante para os dias da semana */
+  margin-bottom: 10px;
+}
+
+.periodo-container {
+  margin-bottom: 10px;
+  padding: 5px;
+  border: 1px solid #834dff; /* Bordas em vermelho */
+  border-radius: 5px;
+  background-color: #a269fd; /* Fundo suave em tom de vermelho */
+}
+
+label {
+  display: inline-block;
+  width: 100px;
+  color: #3f00ec; /* Vermelho escuro para os rótulos */
+}
+
+input[type="text"],
+select {
+  width: calc(100% - 110px);
+  padding: 8px;
+  border: 1px solid #6d4fd9; /* Bordas do campo de texto em vermelho */
+  border-radius: 5px;
+  background-color: #ebe1ff; /* Fundo suave no campo de entrada */
+}
+
+input[type="text"]:focus,
+select:focus {
+  border-color: #bb47ff; /* Realce da borda ao focar */
+  outline: none;
+}
+
+button {
+  background-color: #6f00ff; /* Vermelho */
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #6b14dc; /* Vermelho escuro */
 }
